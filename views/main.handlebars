@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       {{!-- importo bootstrap desde la ruta definida en servidor --}}
+    <link rel="stylesheet" href="/bootstrap/bootstrap.css">
+     {{!-- kit fontawesome --}}
+      <script
+      src="https://kit.fontawesome.com/3f1f63e199.js"
+      crossorigin="anonymous"
+    ></script>
+       {{!-- importo bootstrap js desde la ruta definida en servidor--}}
+    <script src="/bootstrapjs/bootstrap.js"></script>
+    <title>Mercado Web</title>
+</head>
+
+
+<body>
+
+    {{!-- llama a un partial "dashboard" --}}
+<div>{{>dashboard}}</div>
+
+
+{{!-- Importo Jquery desde la ruta definida en servidor--}}
+<script src="/jquery/jquery.js"></script>
+{{!-- Codigo JS --}}
+<script src="/main.js"></script>
+</body>
+
+
+</html>

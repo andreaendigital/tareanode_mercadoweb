@@ -1,0 +1,17 @@
+{{! debe contener el template correspondiente a la presentación de cada producto en el "mainsection" y recibe como parametro el nombre del producto  }}
+
+<!-- Handlebars Producto -->
+<div
+  class="producto col-md-4 col-sm-6 mb-3 d-flex justify-content-center"
+  data-nombre="{{this}}"
+  onclick="seleccionarProducto()"
+>
+  {{! evento que al hacer click selecciona el producto llamando a la función "seleccionarProducto" con el nombre del producto como argumento esta función estará en main.js}}
+
+  <div class="card border-0" style="width: 10rem;">
+    <h5 class="card-title text-center">{{this}}</h5>
+    <img src="{{this}}.png" class="card-img-top" alt="{{this}}" />
+    <div class="card-body">
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+{{!-- se debe realizar una iteración para renderizar un parcial "producto" pasandole como argumento el nombre de cada producto  --}}
+
+
+<div class="container">
+    <div class="row justify-content-center">
+        {{!-- recorremos el array "productos" --}}
+        {{#each productos}}
+        {{!-- llamamos al parcial producto --}}
+        {{> producto this}}
+        {{/each}}
+    </div>
+</div>
